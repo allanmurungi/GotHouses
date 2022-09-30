@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\Users\\DELL\\AndroidStudioProjects\\GotHouses\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_house_list.xml",
+        "source": "C:\\Users\\DELL\\AndroidStudioProjects\\GotHouses\\app\\src\\main\\res\\layout\\activity_house_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\AndroidStudioProjects\\GotHouses\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\list_item.xml",
+        "source": "C:\\Users\\DELL\\AndroidStudioProjects\\GotHouses\\app\\src\\main\\res\\layout\\list_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\AndroidStudioProjects\\GotHouses\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_house_detail.xml",
+        "source": "C:\\Users\\DELL\\AndroidStudioProjects\\GotHouses\\app\\src\\main\\res\\layout\\activity_house_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\AndroidStudioProjects\\GotHouses\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "C:\\Users\\DELL\\AndroidStudioProjects\\GotHouses\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\AndroidStudioProjects\\GotHouses\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_welcome.xml",
+        "source": "C:\\Users\\DELL\\AndroidStudioProjects\\GotHouses\\app\\src\\main\\res\\layout\\activity_welcome.xml"
+    }
+]

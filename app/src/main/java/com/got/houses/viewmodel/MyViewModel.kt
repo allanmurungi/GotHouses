@@ -18,7 +18,7 @@ class MyViewModel constructor(private val mainRepository: Repository) : ViewMode
 
 
 
-    val HouseList = MutableLiveData<List<House>>()
+    val houseList = MutableLiveData<List<House>>()
 
     var job: Job? = null
 
@@ -30,16 +30,16 @@ class MyViewModel constructor(private val mainRepository: Repository) : ViewMode
     }
     val loading = MutableLiveData<Boolean>()
 
-    fun getAllMovies() {
+    fun getAllHouses() {
         Log.d("Thread Outside", Thread.currentThread().name)
 
         viewModelScope.launch {
             Log.d("Thread Inside", Thread.currentThread().name)
             when (val response = mainRepository.getAllHouses()) {
-                is NetworkState.Success -> {
-                    HouseList.postValue(response.data)
+                is NetworkState.Success<*> -> {
+                    houseList.postValue(response.data as List<House>?)
                 }
-                is NetworkState.Error -> {
+                is NetworkState.Error<*> -> {
                     if (response.response.code() == 401) {
                         //HouseList.postValue(NetworkState.Error())
                     } else {
