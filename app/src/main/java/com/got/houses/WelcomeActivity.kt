@@ -15,7 +15,7 @@ class WelcomeActivity : AppCompatActivity() {
         setContentView(R.layout.activity_welcome)
 
            }
-
+//when button is clicked, go to MainActivity
     fun getStarted(view: View) {
         val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)

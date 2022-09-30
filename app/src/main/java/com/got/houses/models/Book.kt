@@ -1,5 +1,5 @@
 package com.got.houses.models
-
+// model class for books
 class Book (
 
 

@@ -11,7 +11,7 @@ import retrofit2.http.Path
 interface RetrofitService {
 
 
-
+//interface with functions that map to back end services
     @GET("houses/")
     suspend fun getAllHouses(): Response<List<House>>
 
@@ -31,10 +31,16 @@ interface RetrofitService {
 
         fun getInstance() : RetrofitService {
             if (retrofitService == null) {
+
+                // Create Retrofit Builder
+
                 val retrofit = Retrofit.Builder()
                     .baseUrl("https://anapioficeandfire.com/api/")
                     .addConverterFactory(GsonConverterFactory.create())
                     .build()
+
+                // Create Retrofit Instance
+
                 retrofitService = retrofit.create(RetrofitService::class.java)
             }
             return retrofitService!!

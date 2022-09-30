@@ -17,7 +17,7 @@ import com.got.houses.services.RetrofitService
 
 class MainActivity : AppCompatActivity() {
 
-
+//declare variables
     var houseList: List<House> = mutableListOf();
     lateinit var viewModel: MyViewModel
     private val adapter = HousesAdapter(houseList)
@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
+//get retrofit service instance
         val retrofitService = RetrofitService.getInstance()
         val mainRepository = Repository(retrofitService)
         binding.houseRecyclerView.adapter = adapter
@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity() {
 
         viewModel.getAllHouses()
     }
-
+// companion object to declare and initialize constants
     companion object
     {
 

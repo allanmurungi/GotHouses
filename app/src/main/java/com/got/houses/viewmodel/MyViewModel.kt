@@ -10,6 +10,7 @@ import kotlinx.coroutines.*
 
 class MyViewModel constructor(private val mainRepository: Repository) : ViewModel() {
 
+    //live data object to help with rendering on the views
     private val _errorMessage = MutableLiveData<String>()
     val errorMessage: LiveData<String>
         get() = _errorMessage
@@ -17,19 +18,20 @@ class MyViewModel constructor(private val mainRepository: Repository) : ViewMode
 
 
 
-
+// collection to store houses data
     val houseList = MutableLiveData<List<House>>()
 
     var job: Job? = null
 
 
 
-
+// defining the coroutine exception handler
     private val exceptionHandler = CoroutineExceptionHandler { _, throwable ->
         onError("Exception handled: ${throwable.localizedMessage}")
     }
     val loading = MutableLiveData<Boolean>()
 
+    //make betwork call using launch to get data from backend server
     fun getAllHouses() {
         Log.d("Thread Outside", Thread.currentThread().name)
 
@@ -50,7 +52,7 @@ class MyViewModel constructor(private val mainRepository: Repository) : ViewMode
             }
         }
     }
-
+//when an error occurs stop, get the message
     private fun onError(message: String) {
         _errorMessage.value = message
         loading.value = false

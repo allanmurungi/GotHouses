@@ -16,24 +16,25 @@ class HousesAdapter (private var houseList: List<House>) : RecyclerView.Adapter<
 
 
    // var houseList = mutableListOf<Movie>()
-
+//set the houses list
     fun setHouses(houses: List<House>) {
         this.houseList = houses.toMutableList()
         notifyDataSetChanged()
     }
-
+//binding the individual list item layout
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
 
         val view = LayoutInflater.from(parent.context).inflate(R.layout.list_item, parent, false)
         return ViewHolder(view)
     }
-
+//binding  data to the views in the individual list item view
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
         holder.house = houseList[position]
         if (ValidationUtil.validateMovie(holder.house!!)) {
             holder.txvHouse.text = houseList[position].name
 
+//once clicked, go to the HouseDetailsACtivity wth some bundled data
         holder.itemView.setOnClickListener { v ->
             val context = v.context
             val intent = Intent(context, HouseDetailActivity::class.java)
@@ -55,10 +56,12 @@ class HousesAdapter (private var houseList: List<House>) : RecyclerView.Adapter<
         }
     }
 
+    //get total umber of list items
     override fun getItemCount(): Int {
         return houseList.size
     }
 
+    //definig the view holder class that instatiates the views in the individual list item view
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         val txvHouse: TextView = itemView.findViewById(R.id.txv_house)
