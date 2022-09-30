@@ -36,16 +36,17 @@ class MyViewModel constructor(private val mainRepository: Repository) : ViewMode
         viewModelScope.launch {
             Log.d("Thread Inside", Thread.currentThread().name)
             when (val response = mainRepository.getAllHouses()) {
-                is NetworkState.Success<*> -> {
-                    houseList.postValue(response.data as List<House>?)
+                is NetworkState.Success-> {
+                    houseList.postValue(response.data)
                 }
-                is NetworkState.Error<*> -> {
+                is NetworkState.Error -> {
                     if (response.response.code() == 401) {
                         //HouseList.postValue(NetworkState.Error())
                     } else {
                         //HouseList.postValue(NetworkState.Error)
                     }
                 }
+
             }
         }
     }

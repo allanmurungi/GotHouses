@@ -1,21 +1,21 @@
-<android.support.design.widget.CoordinatorLayout
+<androidx.coordinatorlayout.widget.CoordinatorLayout
 		xmlns:android="http://schemas.android.com/apk/res/android"
 		xmlns:app="http://schemas.android.com/apk/res-auto"
 		xmlns:tools="http://schemas.android.com/tools"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
 		android:fitsSystemWindows="true"
-		tools:context="com.smartherd.globofly.activities.DestinationDetailActivity"
+		tools:context=".HouseDetailActivity"
 		tools:ignore="MergeRootFrame">
 
-	<android.support.design.widget.AppBarLayout
+	<com.google.android.material.appbar.AppBarLayout
 			android:id="@+id/app_bar"
 			android:layout_width="match_parent"
 			android:layout_height="@dimen/app_bar_height"
 			android:fitsSystemWindows="true"
 			android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
-		<android.support.design.widget.CollapsingToolbarLayout
+		<com.google.android.material.appbar.CollapsingToolbarLayout
 				android:id="@+id/collapsing_toolbar"
 				android:layout_width="match_parent"
 				android:layout_height="match_parent"
@@ -33,18 +33,18 @@
 					android:src="@drawable/toolbar_background"
 					android:contentDescription="Just a Image"/>
 
-			<android.support.v7.widget.Toolbar
+			<androidx.appcompat.widget.Toolbar
 					android:id="@+id/detail_toolbar"
 					android:layout_width="match_parent"
 					android:layout_height="?attr/actionBarSize"
 					app:layout_collapseMode="pin"
 					app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
-		</android.support.design.widget.CollapsingToolbarLayout>
+		</com.google.android.material.appbar.CollapsingToolbarLayout>
 
-	</android.support.design.widget.AppBarLayout>
+	</com.google.android.material.appbar.AppBarLayout>
 
-	<android.support.v4.widget.NestedScrollView
+	<androidx.core.widget.NestedScrollView
 			android:id="@+id/destiny_detail_container"
 			android:layout_width="match_parent"
 			android:layout_height="match_parent"
@@ -56,41 +56,38 @@
 				android:orientation="vertical"
 				android:layout_margin="24dp">
 
-			<android.support.design.widget.TextInputLayout
+			<com.google.android.material.textfield.TextInputLayout
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content">
 
-				<EditText
-						android:id="@+id/et_city"
+				<TextView
+						android:id="@+id/et_region"
 						android:layout_width="match_parent"
 						android:layout_height="wrap_content"
-						android:hint="City Name"
-						android:inputType="textEmailAddress"
 						android:maxLines="1"/>
 
-			</android.support.design.widget.TextInputLayout>
+			</com.google.android.material.textfield.TextInputLayout>
 
-			<android.support.design.widget.TextInputLayout
+			<com.google.android.material.textfield.TextInputLayout
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
 					android:layout_marginTop="10dp">
 
-				<EditText
-						android:id="@+id/et_country"
+				<TextView
+						android:id="@+id/et_coa"
 						android:layout_width="match_parent"
 						android:layout_height="wrap_content"
-						android:hint="Country Name"
-						android:imeOptions="actionUnspecified"/>
+						/>
 
-			</android.support.design.widget.TextInputLayout>
+			</com.google.android.material.textfield.TextInputLayout>
 
-			<android.support.design.widget.TextInputLayout
+			<com.google.android.material.textfield.TextInputLayout
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
 					android:layout_marginTop="10dp">
 
-				<EditText
-						android:id="@+id/et_description"
+				<TextView
+						android:id="@+id/et_words"
 						android:layout_width="match_parent"
 						android:layout_height="wrap_content"
 						android:hint="Description"
@@ -98,7 +95,7 @@
 						android:inputType="textMultiLine"
 						android:maxLines="5"/>
 
-			</android.support.design.widget.TextInputLayout>
+			</com.google.android.material.textfield.TextInputLayout>
 
 			<LinearLayout
 					android:layout_width="match_parent"
@@ -112,7 +109,7 @@
 						android:layout_width="match_parent"
 						android:layout_height="wrap_content"
 						android:layout_marginTop="16dp"
-						android:text="Delete"
+						android:text="@string/back"
 						android:layout_weight="1"/>
 
 				<Button
@@ -122,13 +119,13 @@
 						android:layout_height="wrap_content"
 						android:layout_marginTop="16dp"
 						android:backgroundTint="@color/colorPrimary"
-						android:text="Update"
+						android:text="@string/characters"
 						android:textColor="@android:color/white"
 						android:layout_weight="1"/>
 
 			</LinearLayout>
 
 		</LinearLayout>
-	</android.support.v4.widget.NestedScrollView>
+	</androidx.core.widget.NestedScrollView>
 
-</android.support.design.widget.CoordinatorLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

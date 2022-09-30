@@ -1,0 +1,10 @@
+com/got/houses/BuildConfig.java
+ com.got.houses.BuildConfig
+com/got/houses/databinding/ListItemBinding.java
+ com.got.houses.databinding.ListItemBinding
+com/got/houses/databinding/ActivityMainBinding.java
+ com.got.houses.databinding.ActivityMainBinding
+com/got/houses/databinding/ActivityWelcomeBinding.java
+ com.got.houses.databinding.ActivityWelcomeBinding
+com/got/houses/databinding/ActivityHouseDetailBinding.java
+ com.got.houses.databinding.ActivityHouseDetailBinding

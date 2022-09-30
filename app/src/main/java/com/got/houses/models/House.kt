@@ -2,10 +2,11 @@ package com.got.houses.models
 
 class House (
     var id: Int = 0,
+    var url: String? = null,
     var name: String? = null,
     var region: String? = null,
     var coatOfArms: String? = null,
-    var wards: String? = null,
+    var words: String? = null,
     var titles: List<String>? = null,
     var seats: List<String>? = null,
     var currentLord: String? = null,

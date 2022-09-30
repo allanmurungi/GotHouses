@@ -8,7 +8,7 @@ import android.widget.ProgressBar;
 import android.widget.Toolbar;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import com.google.android.material.appbar.AppBarLayout;
@@ -20,7 +20,7 @@ import java.lang.String;
 
 public final class ActivityMainBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final CoordinatorLayout rootView;
 
   @NonNull
   public final AppBarLayout appBar;
@@ -37,7 +37,7 @@ public final class ActivityMainBinding implements ViewBinding {
   @NonNull
   public final Toolbar toolbar;
 
-  private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull AppBarLayout appBar,
+  private ActivityMainBinding(@NonNull CoordinatorLayout rootView, @NonNull AppBarLayout appBar,
       @NonNull FloatingActionButton fab, @NonNull RecyclerView houseRecyclerView,
       @NonNull ProgressBar progressDialog, @NonNull Toolbar toolbar) {
     this.rootView = rootView;
@@ -50,7 +50,7 @@ public final class ActivityMainBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public CoordinatorLayout getRoot() {
     return rootView;
   }
 
@@ -105,7 +105,7 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((ConstraintLayout) rootView, appBar, fab, houseRecyclerView,
+      return new ActivityMainBinding((CoordinatorLayout) rootView, appBar, fab, houseRecyclerView,
           progressDialog, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);

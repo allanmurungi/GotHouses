@@ -3,18 +3,17 @@ package com.got.houses
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.View
-import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import com.got.houses.adapters.HousesAdapter
-import com.got.houses.services.RetrofitService
 import com.got.houses.viewmodel.MyViewModel
 import com.got.houses.databinding.ActivityMainBinding
-import com.got.houses.services.ServiceBuilder
 import com.got.houses.viewmodel.MyViewModelFactory
 import com.got.houses.viewmodel.Repository
 import androidx.lifecycle.Observer
 import com.got.houses.models.House
+import com.got.houses.services.RetrofitService
+
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -30,7 +29,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val retrofitService = ServiceBuilder.buildService(RetrofitService::class.java)
+        val retrofitService = RetrofitService.getInstance()
         val mainRepository = Repository(retrofitService)
         binding.houseRecyclerView.adapter = adapter
 

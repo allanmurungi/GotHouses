@@ -38,6 +38,17 @@ class HousesAdapter (private var houseList: List<House>) : RecyclerView.Adapter<
             val context = v.context
             val intent = Intent(context, HouseDetailActivity::class.java)
             intent.putExtra(HouseDetailActivity.ARG_ITEM_ID, holder.house!!.id)
+            intent.putExtra("name", holder.house!!.name.toString())
+            intent.putExtra("region", holder.house!!.region.toString())
+            intent.putExtra("coatOfArms", holder.house!!.coatOfArms.toString())
+            intent.putExtra("word", holder.house!!.words.toString())
+            intent.putExtra("currentLord", holder.house!!.currentLord.toString())
+            intent.putExtra("heir", holder.house!!.heir.toString())
+            intent.putExtra("overlord", holder.house!!.overLord.toString())
+            intent.putExtra("founded", holder.house!!.founded.toString())
+            intent.putExtra("founder", holder.house!!.founder.toString())
+            intent.putExtra("url", holder.house!!.url.toString())
+
 
             context.startActivity(intent)
         }
@@ -58,8 +69,3 @@ class HousesAdapter (private var houseList: List<House>) : RecyclerView.Adapter<
         }
     }
 }
-/*
-class MyViewHolder(val binding: AdapterHouseBinding) : RecyclerView.ViewHolder(binding.root) {
-
-}
-*/
