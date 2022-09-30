@@ -2,6 +2,7 @@ package com.got.houses
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_house_detail.*
 
 class HouseDetailActivity : AppCompatActivity() {
@@ -24,6 +25,9 @@ class HouseDetailActivity : AppCompatActivity() {
             val houseRegion  = intent.getIntExtra(region, 0)
             val houseCoatOfArms  = intent.getIntExtra(coatOfArms, 0)
             val houseWords  = intent.getIntExtra(words, 0)
+
+            Toast.makeText(this@HouseDetailActivity, houseName.toString(), Toast.LENGTH_LONG).show()
+
 
 //display the data on the views
             loadDetails(houseName.toString(),houseRegion.toString(),houseCoatOfArms.toString(),houseWords.toString())

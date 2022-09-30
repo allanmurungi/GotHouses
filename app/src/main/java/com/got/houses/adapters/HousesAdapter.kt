@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.got.houses.HouseDetailActivity
 import com.got.houses.R
@@ -39,16 +40,18 @@ class HousesAdapter (private var houseList: List<House>) : RecyclerView.Adapter<
             val context = v.context
             val intent = Intent(context, HouseDetailActivity::class.java)
             intent.putExtra(HouseDetailActivity.ARG_ITEM_ID, holder.house!!.id)
-            intent.putExtra("name", holder.house!!.name.toString())
-            intent.putExtra("region", holder.house!!.region.toString())
-            intent.putExtra("coatOfArms", holder.house!!.coatOfArms.toString())
-            intent.putExtra("word", holder.house!!.words.toString())
-            intent.putExtra("currentLord", holder.house!!.currentLord.toString())
-            intent.putExtra("heir", holder.house!!.heir.toString())
-            intent.putExtra("overlord", holder.house!!.overLord.toString())
-            intent.putExtra("founded", holder.house!!.founded.toString())
-            intent.putExtra("founder", holder.house!!.founder.toString())
-            intent.putExtra("url", holder.house!!.url.toString())
+            intent.putExtra("name", houseList[position].name.toString())
+            intent.putExtra("region", houseList[position].region.toString())
+            intent.putExtra("coatOfArms", houseList[position].coatOfArms.toString())
+            intent.putExtra("word", houseList[position].words.toString())
+            intent.putExtra("currentLord", houseList[position].currentLord.toString())
+            intent.putExtra("heir", houseList[position].heir.toString())
+            intent.putExtra("overlord", houseList[position].overLord.toString())
+            intent.putExtra("founded", houseList[position].founded.toString())
+            intent.putExtra("founder", houseList[position].founder.toString())
+            intent.putExtra("url", houseList[position].url.toString())
+
+            Toast.makeText(context, houseList[position].region.toString(), Toast.LENGTH_LONG).show()
 
 
             context.startActivity(intent)
