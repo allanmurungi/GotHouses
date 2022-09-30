@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">GotHouses</string>
+
+    <string name="tag">View Game Of Thrones Houses</string>
+
+    <string name="start">View Game Of Thrones Houses</string>
+
+
 </resources>
