@@ -15,7 +15,7 @@ import com.got.houses.utils.ValidationUtil
 class HousesAdapter (private var houseList: List<House>) : RecyclerView.Adapter<HousesAdapter.ViewHolder>() {
 
 
-   // var houseList = mutableListOf<Movie>()
+
 //set the houses list
     fun setHouses(houses: List<House>) {
         this.houseList = houses.toMutableList()
@@ -61,7 +61,7 @@ class HousesAdapter (private var houseList: List<House>) : RecyclerView.Adapter<
         return houseList.size
     }
 
-    //definig the view holder class that instatiates the views in the individual list item view
+    //defining the view holder class that instatiates the views in the individual list item view
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         val txvHouse: TextView = itemView.findViewById(R.id.txv_house)

@@ -76,6 +76,10 @@
         "source": "C:\\Users\\DELL\\AndroidStudioProjects\\GotHouses\\app\\src\\main\\res\\layout\\activity_welcome.xml"
     },
     {
+        "merged": "C:\\Users\\DELL\\AndroidStudioProjects\\GotHouses\\app\\build\\intermediates\\res\\merged\\debug\\drawable_dragon.jpg.flat",
+        "source": "C:\\Users\\DELL\\AndroidStudioProjects\\GotHouses\\app\\src\\main\\res\\drawable\\dragon.jpg"
+    },
+    {
         "merged": "C:\\Users\\DELL\\AndroidStudioProjects\\GotHouses\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\DELL\\AndroidStudioProjects\\GotHouses\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },

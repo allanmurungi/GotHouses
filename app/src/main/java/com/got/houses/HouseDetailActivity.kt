@@ -8,7 +8,7 @@ class HouseDetailActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_house_detail)
-//initialize he action bar
+//initialize the action bar
         setSupportActionBar(detail_toolbar)
 
         // Show the Up button in the action bar.
@@ -28,9 +28,7 @@ class HouseDetailActivity : AppCompatActivity() {
 //display the data on the views
             loadDetails(houseName.toString(),houseRegion.toString(),houseCoatOfArms.toString(),houseWords.toString())
 
-           // initUpdateButton(id)
 
-            //initDeleteButton(id)
         }
     }
 

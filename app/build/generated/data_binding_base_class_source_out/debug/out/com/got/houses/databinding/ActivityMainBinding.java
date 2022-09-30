@@ -5,14 +5,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ProgressBar;
-import android.widget.Toolbar;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
-import com.google.android.material.appbar.AppBarLayout;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.got.houses.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -23,29 +20,16 @@ public final class ActivityMainBinding implements ViewBinding {
   private final CoordinatorLayout rootView;
 
   @NonNull
-  public final AppBarLayout appBar;
-
-  @NonNull
-  public final FloatingActionButton fab;
-
-  @NonNull
   public final RecyclerView houseRecyclerView;
 
   @NonNull
   public final ProgressBar progressDialog;
 
-  @NonNull
-  public final Toolbar toolbar;
-
-  private ActivityMainBinding(@NonNull CoordinatorLayout rootView, @NonNull AppBarLayout appBar,
-      @NonNull FloatingActionButton fab, @NonNull RecyclerView houseRecyclerView,
-      @NonNull ProgressBar progressDialog, @NonNull Toolbar toolbar) {
+  private ActivityMainBinding(@NonNull CoordinatorLayout rootView,
+      @NonNull RecyclerView houseRecyclerView, @NonNull ProgressBar progressDialog) {
     this.rootView = rootView;
-    this.appBar = appBar;
-    this.fab = fab;
     this.houseRecyclerView = houseRecyclerView;
     this.progressDialog = progressDialog;
-    this.toolbar = toolbar;
   }
 
   @Override
@@ -75,18 +59,6 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.app_bar;
-      AppBarLayout appBar = rootView.findViewById(id);
-      if (appBar == null) {
-        break missingId;
-      }
-
-      id = R.id.fab;
-      FloatingActionButton fab = rootView.findViewById(id);
-      if (fab == null) {
-        break missingId;
-      }
-
       id = R.id.house_recycler_view;
       RecyclerView houseRecyclerView = rootView.findViewById(id);
       if (houseRecyclerView == null) {
@@ -99,14 +71,8 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.toolbar;
-      Toolbar toolbar = rootView.findViewById(id);
-      if (toolbar == null) {
-        break missingId;
-      }
-
-      return new ActivityMainBinding((CoordinatorLayout) rootView, appBar, fab, houseRecyclerView,
-          progressDialog, toolbar);
+      return new ActivityMainBinding((CoordinatorLayout) rootView, houseRecyclerView,
+          progressDialog);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
