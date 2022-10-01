@@ -32,7 +32,7 @@ class HousesAdapter (private var houseList: List<House>) : RecyclerView.Adapter<
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
         holder.house = houseList[position]
-        if (ValidationUtil.validateMovie(holder.house!!)) {
+        if (ValidationUtil.validateHouse(holder.house!!)) {
             holder.txvHouse.text = houseList[position].name
 
 //once clicked, go to the HouseDetailsACtivity wth some bundled data

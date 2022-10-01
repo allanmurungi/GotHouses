@@ -10,6 +10,7 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0] C:\Users\DELL\.gr
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\84cb2bb1eaf86e88a71be7e1549ef99d\material-1.4.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\65b071d4d3a9ce5cd0c638c8cefbe06c\constraintlayout-2.1.3\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.3.1] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\8d94b251d0db55a33d9a4b674760be6c\appcompat-1.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-testing:2.0.1] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\1208cbc45384f356a9e6a14776093de0\core-testing-2.0.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\1dd974063a21af7dfd5f82560a031b2c\lifecycle-extensions-2.0.0\AndroidManifest.xml:17:1-25:12
 MERGED from [com.github.bumptech.glide:glide:4.12.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\f571c0ff84a02264db6c8e8b6b8fdbd7\jetified-glide-4.12.0\AndroidManifest.xml:2:1-12:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\06c0ed0923cb4fb49692bfa2f5a58976\jetified-viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
@@ -95,9 +96,9 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\DE
 	android:label
 		ADDED from C:\Users\DELL\AndroidStudioProjects\GotHouses\app\src\main\AndroidManifest.xml:10:9-41
 	android:roundIcon
-		ADDED from C:\Users\DELL\AndroidStudioProjects\GotHouses\app\src\main\AndroidManifest.xml:11:9-54
+		ADDED from C:\Users\DELL\AndroidStudioProjects\GotHouses\app\src\main\AndroidManifest.xml:11:9-44
 	android:icon
-		ADDED from C:\Users\DELL\AndroidStudioProjects\GotHouses\app\src\main\AndroidManifest.xml:9:9-43
+		ADDED from C:\Users\DELL\AndroidStudioProjects\GotHouses\app\src\main\AndroidManifest.xml:9:9-39
 	android:allowBackup
 		ADDED from C:\Users\DELL\AndroidStudioProjects\GotHouses\app\src\main\AndroidManifest.xml:8:9-35
 	android:theme
@@ -142,6 +143,8 @@ MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\DELL\.gr
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\65b071d4d3a9ce5cd0c638c8cefbe06c\constraintlayout-2.1.3\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.appcompat:appcompat:1.3.1] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\8d94b251d0db55a33d9a4b674760be6c\appcompat-1.3.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat:1.3.1] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\8d94b251d0db55a33d9a4b674760be6c\appcompat-1.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-testing:2.0.1] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\1208cbc45384f356a9e6a14776093de0\core-testing-2.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-testing:2.0.1] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\1208cbc45384f356a9e6a14776093de0\core-testing-2.0.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\1dd974063a21af7dfd5f82560a031b2c\lifecycle-extensions-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\1dd974063a21af7dfd5f82560a031b2c\lifecycle-extensions-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.github.bumptech.glide:glide:4.12.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\f571c0ff84a02264db6c8e8b6b8fdbd7\jetified-glide-4.12.0\AndroidManifest.xml:6:5-8:41

@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
         binding.houseRecyclerView.adapter = adapter
 
         //the observer will only receive events if the owner(activity) is in active state
-        //invoked when movieList data changes
+        //invoked when houseList data changes
         viewModel.houseList.observe(this, Observer {
             Log.d(TAG, "houseList: $it")
             adapter.setHouses(it)

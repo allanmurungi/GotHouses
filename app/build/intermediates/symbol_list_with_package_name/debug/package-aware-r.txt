@@ -1791,6 +1791,7 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable dragon
 drawable got
+drawable goticon
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
@@ -2477,6 +2478,7 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+mipmap goticon
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
