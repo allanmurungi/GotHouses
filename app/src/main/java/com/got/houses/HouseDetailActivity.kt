@@ -21,10 +21,10 @@ class HouseDetailActivity : AppCompatActivity() {
         if (bundle?.containsKey(ARG_ITEM_ID)!!) {
 
             val id = intent.getIntExtra(ARG_ITEM_ID, 0)
-            val houseName  = intent.getIntExtra(name, 0)
-            val houseRegion  = intent.getIntExtra(region, 0)
-            val houseCoatOfArms  = intent.getIntExtra(coatOfArms, 0)
-            val houseWords  = intent.getIntExtra(words, 0)
+            val houseName  = intent.getStringExtra(name)
+            val houseRegion  = intent.getStringExtra(region)
+            val houseCoatOfArms  = intent.getStringExtra(coatOfArms)
+            val houseWords  = intent.getStringExtra(words)
 
             Toast.makeText(this@HouseDetailActivity, houseName.toString(), Toast.LENGTH_LONG).show()
 

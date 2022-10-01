@@ -27,9 +27,6 @@ public final class ActivityHouseDetailBinding implements ViewBinding {
   public final AppBarLayout appBar;
 
   @NonNull
-  public final Button btnDelete;
-
-  @NonNull
   public final Button btnUpdate;
 
   @NonNull
@@ -51,13 +48,12 @@ public final class ActivityHouseDetailBinding implements ViewBinding {
   public final TextView etWords;
 
   private ActivityHouseDetailBinding(@NonNull CoordinatorLayout rootView,
-      @NonNull AppBarLayout appBar, @NonNull Button btnDelete, @NonNull Button btnUpdate,
+      @NonNull AppBarLayout appBar, @NonNull Button btnUpdate,
       @NonNull CollapsingToolbarLayout collapsingToolbar,
       @NonNull NestedScrollView destinyDetailContainer, @NonNull Toolbar detailToolbar,
       @NonNull TextView etCoa, @NonNull TextView etRegion, @NonNull TextView etWords) {
     this.rootView = rootView;
     this.appBar = appBar;
-    this.btnDelete = btnDelete;
     this.btnUpdate = btnUpdate;
     this.collapsingToolbar = collapsingToolbar;
     this.destinyDetailContainer = destinyDetailContainer;
@@ -97,12 +93,6 @@ public final class ActivityHouseDetailBinding implements ViewBinding {
       id = R.id.app_bar;
       AppBarLayout appBar = rootView.findViewById(id);
       if (appBar == null) {
-        break missingId;
-      }
-
-      id = R.id.btn_delete;
-      Button btnDelete = rootView.findViewById(id);
-      if (btnDelete == null) {
         break missingId;
       }
 
@@ -148,9 +138,8 @@ public final class ActivityHouseDetailBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityHouseDetailBinding((CoordinatorLayout) rootView, appBar, btnDelete,
-          btnUpdate, collapsingToolbar, destinyDetailContainer, detailToolbar, etCoa, etRegion,
-          etWords);
+      return new ActivityHouseDetailBinding((CoordinatorLayout) rootView, appBar, btnUpdate,
+          collapsingToolbar, destinyDetailContainer, detailToolbar, etCoa, etRegion, etWords);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

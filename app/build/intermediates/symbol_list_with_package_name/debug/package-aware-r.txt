@@ -1935,7 +1935,6 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
-id btn_delete
 id btn_update
 id button
 id buttonPanel
